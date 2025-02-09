@@ -28,8 +28,8 @@ function App() {
     }, [token]);
 
     useEffect(() => {
-        if (token) fetchBlogs();
-    }, [token]);
+       fetchBlogs();
+    }, [fetchBlogs]);
 
     const handleSignup = async () => {
         try {
